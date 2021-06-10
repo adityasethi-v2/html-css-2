@@ -95,8 +95,26 @@ h2 {
   transition: all 0.3s;
   cursor: pointer;
   width: 180px;
+  border: solid 2px transparent;
 }
 .btn-blue {
+  background: #10C9C3;
+}
+
+/* Form Element Style */
+input, textarea {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2F302C;
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border: 0;
+  transition: all 0.3s;
+}
+input:focus, textarea:focus {
+  color: #ffffff;
   background: #10C9C3;
 }
 

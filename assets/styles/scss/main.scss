@@ -103,3 +103,30 @@ header {
         }
     }
 }
+
+.need-project {
+    p {
+        padding: 0 35px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        input {
+            @media #{$xs-up} {
+                width: calc(50% - 10px);
+            }
+        }
+
+        input.fix-100 {
+            @media #{$xs-up} {
+                width: 100%;
+            }
+        }
+
+        button {
+            margin: 25px auto;
+        }
+    }
+}

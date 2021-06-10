@@ -98,4 +98,26 @@ header nav a.active {
   padding-top: 7.5px;
 }
 
+.need-project p {
+  padding: 0 35px;
+}
+.need-project form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  .need-project form input {
+    width: calc(50% - 10px);
+  }
+}
+@media (min-width: 576px) {
+  .need-project form input.fix-100 {
+    width: 100%;
+  }
+}
+.need-project form button {
+  margin: 25px auto;
+}
+
 /*# sourceMappingURL=main.css.map */
