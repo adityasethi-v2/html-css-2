@@ -1,0 +1,105 @@
+@import 'variable';
+
+.landing-sec {
+    height: 80vh;
+    background: url('../../images/bg.jpg') no-repeat;
+    background-position: 20% 0px;
+}
+
+header {
+    font-family: $montserrat;
+    max-width: 1830px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-left: 19px;
+            display: inline-flex;
+            align-items: center;
+            letter-spacing: 0px;
+            color: $black;
+            &.active {
+                color: $java;
+            }
+        }
+        
+    }
+}
+
+.landing-content {
+    display: flex;
+    max-width: 360px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.center-box {
+    max-width: 750px;
+    margin: auto;
+}
+
+.project-sec {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        .project {
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            img {
+                max-width: 25px;
+                display: inline-block;
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+.project-detail-sec {
+    background: $java;
+    .projects-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        .project-detail {
+            width: 160px;
+            display: flex;
+            flex-direction: row;
+            .image-cover {
+                margin: auto 10px;
+                color: $white;
+            }
+            .p-contect {
+                color: $white;    
+            }
+            & > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            p {
+                margin: 0px;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 10px;
+                padding-top: 7.5px;
+            }
+        }
+    }
+}
