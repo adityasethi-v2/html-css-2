@@ -122,4 +122,20 @@ input:focus, textarea:focus {
   background: #10C9C3;
 }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: 20% 20% 60%;
+  gap: 60px;
+}
+@media (max-width: 767px) {
+  .grid-3 {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .grid-3 > div {
+    margin-bottom: 25px;
+  }
+}
+
 /*# sourceMappingURL=global.css.map */

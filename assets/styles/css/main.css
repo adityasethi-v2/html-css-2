@@ -63,6 +63,11 @@ header nav a.active {
   display: inline-block;
   margin: 10px auto;
 }
+.project-sec .projects .project label {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
 
 .project-detail-sec {
   background: #10C9C3;
@@ -125,7 +130,7 @@ header nav a.active {
   color: #A5A194;
 }
 .footer .center-box {
-  max-width: calc(950px - 80px);
+  max-width: calc(950px - 120px);
 }
 .footer label {
   display: block;
@@ -137,11 +142,6 @@ header nav a.active {
   text-decoration: inherit;
   color: inherit;
 }
-.footer .grid-3 {
-  display: grid;
-  grid-template-columns: 20% 20% 60%;
-  gap: 60px;
-}
 .footer .contact a {
   display: block;
 }
@@ -150,7 +150,7 @@ header nav a.active {
   flex-wrap: wrap;
 }
 .footer .links a {
-  min-width: 33%;
+  min-width: 125px;
 }
 
 /*# sourceMappingURL=main.css.map */

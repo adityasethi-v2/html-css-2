@@ -121,3 +121,19 @@ input, textarea {
         background: $java;
     }
 }
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    gap: 60px;
+
+    @media #{$sm-down} {
+        display: block;
+    }
+
+    & > div {
+        @media #{$sm-down} {
+            margin-bottom: 25px;
+        }   
+    }
+}

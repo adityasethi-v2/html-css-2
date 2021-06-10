@@ -66,6 +66,11 @@ header {
                 display: inline-block;
                 margin: 10px auto;
             }
+            label {
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -134,7 +139,7 @@ header {
     font-size: 12px;
     color: $dawn;
     .center-box {
-        max-width: calc(#{$center-width} - 80px);
+        max-width: calc(#{$center-width} - 120px);
     }
     label {
         display: block;
@@ -146,11 +151,6 @@ header {
         text-decoration: inherit;
         color: inherit;
     }
-    .grid-3 {
-        display: grid;
-        grid-template-columns: 20% 20% 60%;
-        gap: 60px;
-    }
     .contact {
         a {
             display: block;
@@ -160,7 +160,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         a {
-            min-width: 33%;
+            min-width: 125px;
         }
     }
 }
