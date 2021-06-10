@@ -23,7 +23,12 @@ header {
         display: flex;
         align-items: center;
     }
-
+    .mob-nav {
+        display: none;
+        @media #{$sm-down} {
+            display: block;
+        }
+    }
     nav {
         @media #{$sm-down} {
             display: none;

@@ -26,6 +26,14 @@ header .logo {
   display: flex;
   align-items: center;
 }
+header .mob-nav {
+  display: none;
+}
+@media (max-width: 767px) {
+  header .mob-nav {
+    display: block;
+  }
+}
 @media (max-width: 767px) {
   header nav {
     display: none;
