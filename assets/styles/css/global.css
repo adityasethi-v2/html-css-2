@@ -75,6 +75,10 @@ h2 {
   background: #f5f5f5;
 }
 
+.dark-grey-bg {
+  background: #141414;
+}
+
 .display-flex-end {
   display: flex;
   flex-direction: column;

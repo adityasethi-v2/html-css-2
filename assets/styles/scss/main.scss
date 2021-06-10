@@ -47,7 +47,7 @@ header {
 }
 
 .center-box {
-    max-width: 750px;
+    max-width: $center-width;
     margin: auto;
 }
 
@@ -58,7 +58,7 @@ header {
         justify-content: center;
         gap: 10px;
         .project {
-            width: 160px;
+            width: 185px;
             display: flex;
             flex-direction: column;
             img {
@@ -78,7 +78,7 @@ header {
         justify-content: center;
         gap: 10px;
         .project-detail {
-            width: 160px;
+            width: 185px;
             display: flex;
             flex-direction: row;
             .image-cover {
@@ -104,15 +104,13 @@ header {
     }
 }
 
-.need-project {
-    p {
-        padding: 0 35px;
-    }
+.need-project {    
     form {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-
+        max-width: 550px;
+        margin: 35px auto;
         input {
             @media #{$xs-up} {
                 width: calc(50% - 10px);
@@ -127,6 +125,42 @@ header {
 
         button {
             margin: 25px auto;
+        }
+    }
+}
+
+.footer {
+    font-family: $montserrat;
+    font-size: 12px;
+    color: $dawn;
+    .center-box {
+        max-width: calc(#{$center-width} - 80px);
+    }
+    label {
+        display: block;
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    a {
+        text-decoration: inherit;
+        color: inherit;
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 20% 20% 60%;
+        gap: 60px;
+    }
+    .contact {
+        a {
+            display: block;
+        }
+    }
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            min-width: 33%;
         }
     }
 }
